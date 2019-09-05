@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: artifactory-pod
+  labels:
+      divya: artifactorypod
+spec:
+  containers:
+  - name: artifactory-pod
+    image: docker.bintray.io/jfrog/artifactory-oss
+    ports:
+       - containerPort: 8081
