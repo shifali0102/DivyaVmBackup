@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkinsjnlpservice
+spec:
+  type: LoadBalancer  # use LoadBalancer as type here
+  ports:
+  - port: 50000
+    protocol: TCP
+  selector:
+       divya: pod
